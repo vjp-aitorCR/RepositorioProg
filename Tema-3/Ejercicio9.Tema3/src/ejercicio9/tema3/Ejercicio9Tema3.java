@@ -10,32 +10,48 @@ import java.util.Scanner;
  */
 public class Ejercicio9Tema3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-      Scanner entrada = new Scanner (System.in);
-      
-      int numero1;
-        System.out.println("Por favor, introduzca el primer numero:");
+    Scanner entrada = new Scanner(System.in);
+
+        int numero1;
+        int numero2;
+        int numero3;
+        int numero4;
+
+        System.out.print("Por favor, introduzca el primer numero:");
         numero1 = entrada.nextInt();
-      int numero2;
-        System.out.println("Ahora, introduzca un segundo numero:");
+
+        System.out.print("Ahora, introduzca un segundo numero:");
         numero2 = entrada.nextInt();
-      int numero3;
-        System.out.println("Introduzca el tercer numero:");
+
+        System.out.print("Introduzca el tercer numero:");
         numero3 = entrada.nextInt();
-      int numero4;
-        System.out.println("Por ultimo, introduzca un cuarto numero:");
+
+        System.out.print("Por ultimo, introduzca un cuarto numero:");
         numero4 = entrada.nextInt();
+
+       
+        int x; // variable para intercambiar
+
+        //ComparO el numero 1 con todo los otros
+        if (numero1 > numero2) { x = numero1; numero1 = numero2; numero2 = x; 
+        }
+        if (numero1 > numero3) { x = numero1; numero1 = numero3; numero3 = x; 
+        }
+        if (numero1 > numero4) { x = numero1; numero1 = numero4; numero4 = x; 
+        }
+        //Comparo el numero 2 con los dos restantes  
+        if (numero2 > numero3) { x = numero2; numero2 = numero3; numero3 = x; 
+        }
+        if (numero2 > numero4) { x = numero2; numero2 = numero4; numero4 = x; 
+        }
+
+        //Comparo el numero 3 y el 4 entre si
+        if (numero3 > numero4) { x = numero3; numero3 = numero4; numero4 = x; 
+        }
+
         
-        
-        
-        
-        
-        
-        
-    }
+        System.out.println("El orden de los numeros introducidos es el " + numero1 + " - " + numero2 + " - " + numero3 + " - " + numero4);
     
+    }
 }
