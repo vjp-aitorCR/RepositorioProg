@@ -16,12 +16,12 @@ public class Ejercicio1Tema3 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner (System.in);
-        double numero;
+        double numero;  //Variable para el numero obtenido
         System.out.println("Por favor, introduzca un numero:");
         numero = entrada.nextDouble();
         
-        if (numero > 0){
-        System.out.println("El numero introducido es positivo");
+        if (numero > 0) {
+        System.out.println("El numero introducido es positivo");    
         }
         else {
         System.out.println("El numero introducido es negativo");
