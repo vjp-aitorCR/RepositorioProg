@@ -22,7 +22,7 @@ public class Ejercicio16 {
         
         
         for (i = 21; i <= 160; i += 2) {    //Empezamos en el 21 porque el 20 es par 
-            System.out.println(i );
+            System.out.println(i);
             contador++; //Incrementamos el contador en 1 por cada numero impreso
         }
 
