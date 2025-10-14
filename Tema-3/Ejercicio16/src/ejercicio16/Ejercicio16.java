@@ -18,11 +18,11 @@ public class Ejercicio16 {
         int contador = 0;   //Variable para contar los numeros impares
         int i;
         
-        System.out.println("Los numeros impares existentes entre el numero 20 y el 160 son: ");
+        System.out.println("Los numeros impares existentes entre el numero 20 y el 160 son: " );
         
         
         for (i = 21; i <= 160; i += 2) {    //Empezamos en el 21 porque el 20 es par 
-            System.out.print(i + " - ");
+            System.out.println(i );
             contador++; //Incrementamos el contador en 1 por cada numero impreso
         }
 
