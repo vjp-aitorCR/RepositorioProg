@@ -39,7 +39,7 @@ public class Ejercicio27 {
             try {
                 opcion = entrada.nextInt();
             } catch (ArithmeticException e) {
-                entrada.next(); // Limpiar el buffer
+                entrada.nextInt(); // Limpiar el buffer
                 continue;
             }
             
