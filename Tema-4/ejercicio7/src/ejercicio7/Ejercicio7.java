@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Ejercicio7 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Metodo main donde se introduce los numeros
     Scanner entrada = new Scanner(System.in);
 
         int numero1;
@@ -33,15 +33,18 @@ public class Ejercicio7 {
         comparacion(numero1, numero2, numero3, numero4);
     }
     
-     public static void comparacion(int a, int b, int c, int d){
+     public static void comparacion(int a, int b, int c, int d){ //Metodo que muestra los numeros ordenados
         int e;
 
         //ComparO el numero 1 con todo los otros
-        if (a > b) { e = a; a = b; b = e; 
+        if (a > b) { 
+            e = a; a = b; b = e; 
         }
-        if (a > c) { e = a; a = c; c = e; 
+        if (a > c) { 
+            e = a; a = c; c = e; 
         }
-        if (a > d) { e = a; a = d; d = e; 
+        if (a > d) { 
+            e = a; a = d; d = e; 
         }
         //Comparo el numero 2 con los dos restantes  
         if (b > c) { e = b; b = c; c = e; 
@@ -50,7 +53,8 @@ public class Ejercicio7 {
         }
 
         //Comparo el numero 3 y el 4 entre si
-        if (c > d) { e = c; c = d; d = e; 
+        if (c > d) { 
+            e = c; c = d; d = e; 
         }
 
         
