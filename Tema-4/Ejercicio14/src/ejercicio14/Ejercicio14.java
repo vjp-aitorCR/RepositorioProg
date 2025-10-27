@@ -14,8 +14,8 @@ public class Ejercicio14 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int numero = pedirNumero(); // Llamamos al método que pide un número al usuario
-        mostrarMultiplosDeTres(numero); // Llamamos al método que muestra los múltiplos de 3 hasta ese número
+        int numero = pedirNumero(); // Llamamos al metodo que pide un numero al usuario
+        mostrarMultiplosDeTres(numero); // Llamamos al metodo que muestra los multiplos de 3 hasta ese numero
     }
 
     // Metodo para pedir un numero al usuario
