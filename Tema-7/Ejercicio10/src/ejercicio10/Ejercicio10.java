@@ -28,11 +28,17 @@ public class Ejercicio10 {
     }
     //Metodo para sustituir los numeros repetidos por 0
     public static void sustituirRepetidosPorCero(int[] vector){
+        boolean repe = false;
         for(int i = 0; i < vector.length; i++){
-            for(int j = 0; j < vector.length; j++){
+            for(int j = i + 1; j < vector.length; j++){
                 if (vector[i] == vector[j]){
                     vector[j] = 0;
+                    repe = true;
                 }
+            }
+            if(repe){
+                vector[i] = 0;
+                repe = false;
             }
         }
     }
@@ -44,8 +50,9 @@ public class Ejercicio10 {
         System.out.println("Se han generado los siguientes numeros:");
         mostrarVector(numeros);
         //Sustituir repetidos por 0 y mostrarlo
+        System.out.println("");
         sustituirRepetidosPorCero(numeros);
-        System.err.println("Sustituimos los elementos repetidos por un 0:");
+        System.out.println("Sustituimos los elementos repetidos por un 0:");
         mostrarVector(numeros);
     }
     
