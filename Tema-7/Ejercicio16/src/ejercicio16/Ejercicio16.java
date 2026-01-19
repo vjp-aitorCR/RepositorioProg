@@ -16,10 +16,10 @@ public class Ejercicio16 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        // Arrays de nombres de alumnos y asignaturas
+        //Vectores de nombres de alumnos y asignaturas
         String[] alumnos = {"Pepe", "Juan", "Ana", "Marta", "Pedro", "Maria"};
         String[] asignaturas = {"Lengua", "Mates", "Historia", "Fisica"};
-        // Matriz de notas
+        //Matriz de notas
         double[][] notas = new double[alumnos.length][asignaturas.length];
 
         int opcion;
