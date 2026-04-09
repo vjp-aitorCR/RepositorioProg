@@ -44,10 +44,10 @@ public class Autobus {
     }
     //Mostrar Informacion
     public void mostrarInformacion() {
-        System.out.println("Matrícula: " + matricula);
+        System.out.println("Matricula: " + matricula);
         System.out.println("Conductores asignados:");
         if (conductores.isEmpty()) {
-            System.out.println("  Ningún conductor asignado");
+            System.out.println("  Ningun conductor asignado");
         } else {
             for (HashMap.Entry<String, String> entry : conductores.entrySet()) {
                 System.out.println("  DNI: " + entry.getKey() + " - Nombre: " + entry.getValue());

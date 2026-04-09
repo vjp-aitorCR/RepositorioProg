@@ -47,7 +47,7 @@ public class EstacionAutobuses {
         int posicion;
         //Bucle hasta encontrar una posicion valida y libre
         do {  
-            System.out.print("Introduzca la posición (0-5) donde aparcar: ");
+            System.out.print("Introduzca la posicion (0-5) donde aparcar: ");
             posicion = entrada.nextInt();
             entrada.nextLine();  //Limpiar el buffer
             if (posicion < 0 || posicion >= 6){
@@ -101,7 +101,7 @@ public class EstacionAutobuses {
         for (int i = 0; i < aparcamientos.length; i++){ 
             if (aparcamientos[i] != null && aparcamientos[i].getMatricula().equalsIgnoreCase(matricula)){
                 System.out.println("---AUTOBUS ENCONTRADO---");
-                System.out.println("Posición en la estación: " + i);
+                System.out.println("Posicion en la estación: " + i);
                 aparcamientos[i].mostrarInformacion();  
                 encontrado = true;
                 break;
