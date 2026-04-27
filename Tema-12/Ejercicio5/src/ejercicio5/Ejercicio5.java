@@ -34,6 +34,7 @@ public class Ejercicio5 {
             entrada.nextLine(); //Limpiar buffer
             
             switch (opcion){
+                //Añadir contactos al fichero
                 case 1:
                     try{
                         System.out.print("Nombre: ");
@@ -55,6 +56,7 @@ public class Ejercicio5 {
                     break;
                     
                 case 2:
+                    //Leer el fichero y mostrarlo en consola
                     try {
                         FileReader fr = new FileReader("agenda.txt");
                         BufferedReader br = new BufferedReader(fr);
