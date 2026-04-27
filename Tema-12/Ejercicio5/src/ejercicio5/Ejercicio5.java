@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package ejercicio5;
+
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,6 +11,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Scanner;
 import java.io.IOException;
+
 /**
  *
  * @author Personal
@@ -23,8 +25,8 @@ public class Ejercicio5 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         int opcion;
-        
-        do{
+
+        do {
             System.out.println("---MENU---");
             System.out.println("1. Anhadir contacto");
             System.out.println("2. Mostrar contactos");
@@ -32,18 +34,18 @@ public class Ejercicio5 {
             System.out.print("Elige opcion: ");
             opcion = entrada.nextInt();
             entrada.nextLine(); //Limpiar buffer
-            
-            switch (opcion){
+
+            switch (opcion) {
                 //Añadir contactos al fichero
                 case 1:
-                    try{
+                    try {
                         System.out.print("Nombre: ");
                         String nombre = entrada.nextLine();
                         System.out.print("Edad: ");
                         String edad = entrada.nextLine();
                         System.out.print("Telefono: ");
                         String telefono = entrada.nextLine();
-                        
+
                         FileWriter fw = new FileWriter("agenda.txt", true);
                         PrintWriter pw = new PrintWriter(fw);
                         pw.write(nombre + " - " + edad + " anhos - " + telefono);
@@ -54,7 +56,7 @@ public class Ejercicio5 {
                         System.out.println("Error al guardar: " + e.getMessage());
                     }
                     break;
-                    
+
                 case 2:
                     //Leer el fichero y mostrarlo en consola
                     try {
@@ -72,15 +74,15 @@ public class Ejercicio5 {
                         System.out.println("Error al leer: " + e.getMessage());
                     }
                     break;
-                    
+
                 case 3:
                     System.out.println("Saliendo del programa...");
                     break;
-                    
+
                 default:
                     System.out.println("Opcion no valida");
             }
         } while (opcion != 3);
-        
+
     }
 }
